@@ -31,8 +31,9 @@ export default async function handler(req, res) {
         subject: subject,
         text: message,
       },
-      (err) => {
+      (err, info) => {
         if (err) {
+          console.log(info);
           code = 503;
           responseMessage =
             'El mensaje no se pudo enviar 🙁, intentalo de nuevo más tarde.';
