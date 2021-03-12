@@ -8,8 +8,10 @@ const Navbar = () => {
         <NextLink href="/">
           <Link _hover={{ textDecoration: 'none' }}>
             <Center>
-              <Heading color="#00adb5">Dev</Heading>
-              <Heading>Yorch</Heading>
+              <Heading color="#00adb5" size="lg">
+                Dev
+              </Heading>
+              <Heading size="lg">Yorch</Heading>
             </Center>
           </Link>
         </NextLink>
