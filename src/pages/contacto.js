@@ -88,11 +88,7 @@ const Contacto = () => {
         </Text>
         <Text>
           <Icon as={AiFillTwitterSquare} />{' '}
-          <Link
-            color="#00adb5"
-            href="https://github.com/JorgeMayoral"
-            isExternal
-          >
+          <Link color="#00adb5" href="https://twitter.com/Dev_Yorch" isExternal>
             Dev_Yorch
           </Link>
         </Text>
@@ -100,7 +96,7 @@ const Contacto = () => {
           <Icon as={AiFillLinkedin} />{' '}
           <Link
             color="#00adb5"
-            href="https://github.com/JorgeMayoral"
+            href="https://linkedin.com/in/jorgemayoralalvarez"
             isExternal
           >
             Jorge Mayoral Álvarez
