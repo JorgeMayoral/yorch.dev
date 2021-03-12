@@ -12,21 +12,19 @@ export default async function handler(req, res) {
   let code = 200;
   let responseMessage = 'El mensaje ha sido enviado 😄';
 
-  console.log('Peticion recivida'); // TODO: DELETE
-
   if (req.method === 'POST') {
     const { contactName: name, email, subject, text } = req.body;
     const message = `Nombre: ${name}\nEmail: ${email}\nAsunto: ${subject}\nMensaje:\n${text}`;
 
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
     });
-
-    console.log('Transporter creado'); // TODO: DELETE
 
     transporter.sendMail(
       {
@@ -35,7 +33,7 @@ export default async function handler(req, res) {
         subject: subject,
         text: message,
       },
-      (err, info) => {
+      function (err, info) {
         console.log(info);
         if (err) {
           console.log(err);
