@@ -12,6 +12,8 @@ export default async function handler(req, res) {
   let code = 200;
   let responseMessage = 'El mensaje ha sido enviado 😄';
 
+  console.log('Peticion recivida'); // TODO: DELETE
+
   if (req.method === 'POST') {
     const { contactName: name, email, subject, text } = req.body;
     const message = `Nombre: ${name}\nEmail: ${email}\nAsunto: ${subject}\nMensaje:\n${text}`;
@@ -24,6 +26,8 @@ export default async function handler(req, res) {
       },
     });
 
+    console.log('Transporter creado'); // TODO: DELETE
+
     transporter.sendMail(
       {
         from: process.env.EMAIL_USER,
@@ -32,8 +36,9 @@ export default async function handler(req, res) {
         text: message,
       },
       (err, info) => {
+        console.log(info);
         if (err) {
-          console.log(info);
+          console.log(err);
           code = 503;
           responseMessage =
             'El mensaje no se pudo enviar 🙁, intentalo de nuevo más tarde.';
