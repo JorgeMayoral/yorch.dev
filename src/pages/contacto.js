@@ -24,7 +24,6 @@ const Contacto = () => {
       body: JSON.stringify(values),
     });
     const data = await response.json();
-    console.log(data); // TODO: DELETE
     toast({
       description: data.message,
       status: data.code === 200 ? 'success' : error,
