@@ -16,20 +16,30 @@ const Contacto = () => {
   const toast = useToast();
 
   async function sendMail(values) {
-    const response = await fetch('/api/sendEmail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(values),
-    });
-    const data = await response.json();
-    toast({
-      description: data.message,
-      status: data.code === 200 ? 'success' : error,
-      isClosable: true,
-      duration: 9000,
-    });
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+      const data = await response.json();
+      toast({
+        description: data.message,
+        status: 'success',
+        isClosable: true,
+        duration: 9000,
+      });
+    } catch (error) {
+      console.error(error.message);
+      toast({
+        description: 'Algo fue mal, intentalo de nuevo más tarde.',
+        status: 'error',
+        isClosable: true,
+        duration: 9000,
+      });
+    }
   }
 
   return (
