@@ -1,6 +1,6 @@
 ---
 title: 'IV - Red social para desarrolladores (MERN)'
-date: '2020-03-12'
+date: '2020-03-17'
 extract: 'Creamos algunos componentes para el layout de la aplicación, las páginas de registro e inicio de sesión, y las conectamos con el servidor'
 ---
 

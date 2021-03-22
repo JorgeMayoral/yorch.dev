@@ -1,6 +1,6 @@
 ---
 title: 'III - Red social para desarrolladores (MERN)'
-date: '2020-03-12'
+date: '2020-03-15'
 extract: 'Iniciamos el frontend con Next.js y Chakra UI. Eliminamos los archivos que no vamos a necesitar.'
 ---
 
