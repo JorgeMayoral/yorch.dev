@@ -90,6 +90,46 @@ const Index = () => (
               </Link>
             </Stack>
           </Box>
+          <Box mt={8}>
+            <Text fontSize="xl" mb={2}>
+              Hacker News Reader
+            </Text>
+            <Text mb={2}>
+              HN Reader es un pequeño proyecto creado con el fin de aprender a
+              utilizar React Native.
+            </Text>
+            <Text mb={2}>
+              Se trata de un lector de noticias publicadas en{' '}
+              <Link
+                href="https://news.ycombinator.com/"
+                isExternal
+                color="#00adb5"
+              >
+                Hacker News
+              </Link>
+              , para ello se hace uso de su{' '}
+              <Link
+                href="https://github.com/HackerNews/API"
+                isExternal
+                color="#00adb5"
+              >
+                API
+              </Link>{' '}
+              oficial. La app ha sido desarrollada para Android, aunque no hace
+              uso de muchas funciones exclusivas, por lo que podría ser adaptada
+              fácilmente para ser usada en iOS.
+            </Text>
+            <Stack spacing={4} mt={4}>
+              <Link
+                href="https://github.com/JorgeMayoral/hn-react-native"
+                isExternal
+              >
+                <Button leftIcon={<FaGithub />} bgColor="#00adb5">
+                  Código
+                </Button>
+              </Link>
+            </Stack>
+          </Box>
         </Box>
       </Stack>
     </Layout>
