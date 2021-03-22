@@ -130,7 +130,7 @@ Recuperamos children de las props, será el contenido del layout.
 
 La página inicial de la app quedaría así con el layout:
 
-![Index Layout](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/64d6bdab-52b7-4da5-acb4-4d6195bdeffa/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210316T122358Z&X-Amz-Expires=86400&X-Amz-Signature=b4163e8c2d674ecd5727ab13dede3ea070617c407026d0e4e403efae35149594&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![Index Layout](/postImages/4-index-layout.png)
 
 ## Preparaciones para las páginas
 
@@ -315,7 +315,7 @@ Tabién crearemos una función validate que nos permitirá mostrar un error al u
 
 A continuación necesitamos una función asíncrona que usaremos para enviar la información de login al servidor, si es correcta nos devolverá los datos del usuario, los mostrará en la pantalla y nos devolverá a la pantalla de inicio con (router.push('/')), si no lo es, mostrará un error en la consola, en un futuro mejoraremos el manejo de los errores.
 
-![Login Response](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c7d2c7ed-8e58-417d-9bfc-26970d138a41/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210316T122459Z&X-Amz-Expires=86400&X-Amz-Signature=3079d32a52f11cc5525c01036013e248a52dc98400043aa2c6bfd31f2ac96177&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![Login Response](/postImages/4-login-response.png)
 
 Para hacer la petición usamos fetch, también podríamos utilizar una librería como axios que nos facilitaría algunas cosas como la cabecera del tipo de contenido. No me voy a detener a explicar el funcionamiento de fetch ahora, aunque podría ser buena idea hacer un post sobre su uso.
 
@@ -323,7 +323,7 @@ Finalmente devolvemos el contenido del componente, necesitaremos envolver el for
 
 La página quedaría así:
 
-![Login Page](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b90b7572-55d4-45bc-aeb9-d78fa90febcc/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210316T122528Z&X-Amz-Expires=86400&X-Amz-Signature=58d99a7e31f04612db09e5d908177dc3e5f6620c03b05bda35d3ad2a0e0a8a7b&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![Login Page](/postImages/4-login-page.png)
 
 También tenemos al final del formulario un enlace a la página de registro  que crearemos a continuación.
 
@@ -464,7 +464,7 @@ Las principales diferencias son que la función de validación comprueba, a part
 
 Está página quedaría así:
 
-![Register Page](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/023c2a44-5aef-4594-9b7b-6f61f99da96f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210316%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210316T122555Z&X-Amz-Expires=86400&X-Amz-Signature=e5776d61f83b8545123d4e2331fd91b6cba5e6601bc4d225e1e3735911be3775&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![Register Page](/postImages/4-register-page.png)
 
 ## Probando al app
 
