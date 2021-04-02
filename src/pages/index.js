@@ -1,6 +1,6 @@
 import { Box, Heading, Link, Stack, Text, VStack } from '@chakra-ui/layout';
 import { Button, Divider, Image } from '@chakra-ui/react';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaGooglePlay } from 'react-icons/fa';
 import Layout from './../components/Layout';
 import Head from 'next/head';
 
@@ -126,6 +126,14 @@ const Index = () => (
               >
                 <Button leftIcon={<FaGithub />} bgColor="#00adb5">
                   Código
+                </Button>
+              </Link>
+              <Link
+                href="https://play.google.com/store/apps/details?id=dev.yorch.hnreader"
+                isExternal
+              >
+                <Button leftIcon={<FaGooglePlay />} bgColor="#00adb5">
+                  Google Play
                 </Button>
               </Link>
             </Stack>
