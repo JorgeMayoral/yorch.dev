@@ -138,6 +138,45 @@ const Index = () => (
               </Link>
             </Stack>
           </Box>
+          <Box mt={8}>
+            <Text fontSize="xl" mb={2}>
+              LoL Matches
+            </Text>
+            <Text mb={2}>
+              LoL Matches es una aplicación web para ver el resultado de las
+              últimas partidas de League of Legends de un jugador.
+            </Text>
+            <Text mb={2}>
+              La aplicación web está construida con el framework{' '}
+              <Link href="https://nextjs.org/" isExternal color="#00adb5">
+                Next.js
+              </Link>{' '}
+              y hace uso de la{' '}
+              <Link
+                href="https://developer.riotgames.com/"
+                isExternal
+                color="#00adb5"
+              >
+                API
+              </Link>{' '}
+              de Riot Games para obtener la información de los jugadores y las
+              partidas. Puedes ver unar versión live y el código de la app en
+              los enlacces de abajo.
+            </Text>
+            <Stack spacing={4} mt={4}>
+              <Link
+                href="https://github.com/JorgeMayoral/lol-matches"
+                isExternal
+              >
+                <Button leftIcon={<FaGithub />} bgColor="#00adb5">
+                  Código
+                </Button>
+              </Link>
+              <Link href="https://lolmatches.yorch.dev/" isExternal>
+                <Button bgColor="#00adb5">Visitar web</Button>
+              </Link>
+            </Stack>
+          </Box>
         </Box>
       </Stack>
     </Layout>
