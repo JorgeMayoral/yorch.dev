@@ -79,6 +79,27 @@ const courses = () => {
           <Button bgColor="#00adb5">Certificado</Button>
         </Link>
       </Box>
+
+      <Box mt={8}>
+        <Text fontSize="xl" mb={2}>
+          Arquitectura Hexagonal
+        </Text>
+        <Text mb={2}>
+          Curso de{' '}
+          <Link
+            href="https://pro.codely.tv/library/arquitectura-hexagonal/66748/about/"
+            isExternal
+            color="#00adb5"
+            target="blank"
+          >
+            CodelyTV
+          </Link>{' '}
+          sobre arquitectura hexagonal.
+        </Text>
+        <Link href="/courses/arquitectura-hexagonal.pdf" target="blank">
+          <Button bgColor="#00adb5">Certificado</Button>
+        </Link>
+      </Box>
     </Layout>
   );
 };
