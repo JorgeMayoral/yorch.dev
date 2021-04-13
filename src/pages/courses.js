@@ -100,6 +100,27 @@ const courses = () => {
           <Button bgColor="#00adb5">Certificado</Button>
         </Link>
       </Box>
+
+      <Box mt={8}>
+        <Text fontSize="xl" mb={2}>
+          Docker: De 0 a deployment
+        </Text>
+        <Text mb={2}>
+          Curso de{' '}
+          <Link
+            href="https://pro.codely.tv/library/docker-de-0-a-deployment/70624/about/"
+            isExternal
+            color="#00adb5"
+            target="blank"
+          >
+            CodelyTV
+          </Link>{' '}
+          sobre Docker y Docker compose.
+        </Text>
+        <Link href="/courses/docker-de-0-a-deployment.pdf" target="blank">
+          <Button bgColor="#00adb5">Certificado</Button>
+        </Link>
+      </Box>
     </Layout>
   );
 };
