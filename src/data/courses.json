@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Docker: De 0 a deployment",
+    "description": "Curso de CodelyTV sobre Docker y Docker compose.",
+    "courseLink": "https://pro.codely.tv/library/docker-de-0-a-deployment/70624/about/",
+    "certificate": "docker-de-0-a-deployment.pdf"
+  },
+  {
+    "title": "Principios SOLID aplicados",
+    "description": "Curso de CodelyTV sobre principios SOLID.",
+    "courseLink": "https://pro.codely.tv/library/principios-solid-aplicados/77070/about/",
+    "certificate": "principios-solid-aplicados.pdf"
+  },
+  {
+    "title": "Arquitectura Hexagonal",
+    "description": "Curso de CodelyTV sobre arquitectura hexagonal.",
+    "courseLink": "https://pro.codely.tv/library/arquitectura-hexagonal/66748/about/",
+    "certificate": "arquitectura-hexagonal.pdf"
+  },
+  {
+    "title": "Bash para el día a día: Scripting & Productividad",
+    "description": "Curso de CodelyTV sobre scripting en bash.",
+    "courseLink": "https://pro.codely.tv/library/curso-bash/148078/about/",
+    "certificate": "curso-bash.pdf"
+  },
+  {
+    "title": "Makefile: El punto de entrada a tus proyectos",
+    "description": "Curso de CodelyTV sobre la elaboración de Makefiles.",
+    "courseLink": "https://pro.codely.tv/library/makefiles/168370/about/",
+    "certificate": "makefiles.pdf"
+  }
+]
