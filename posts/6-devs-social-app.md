@@ -1,6 +1,6 @@
 ---
 title: 'VI - Red social para desarrolladores (MERN)'
-date: '2020-06-15'
+date: '2021-06-15'
 extract: 'Retomamos el desarrollo después de meses, hablamos de algunos cambios necesarios y de otros que ya se han hecho.'
 ---
 

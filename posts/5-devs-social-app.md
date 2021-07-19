@@ -1,6 +1,6 @@
 ---
 title: 'V - Red social para desarrolladores (MERN)'
-date: '2020-03-23'
+date: '2021-03-23'
 extract: 'Añadimos contexto global a la aplicación para almacenar la información del usuario y poder acceder desde otras partes de la app'
 ---
 

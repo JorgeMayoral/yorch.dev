@@ -1,6 +1,6 @@
 ---
 title: 'VII - Red social para desarrolladores (MERN)'
-date: '2020-07-15'
+date: '2021-07-15'
 extract: 'Añadimos test unitarios, separamos controlador y servicio, y cambiamos la autentificación a JWT.'
 ---
 

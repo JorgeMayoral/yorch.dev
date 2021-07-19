@@ -1,6 +1,6 @@
 ---
 title: 'I - Red social para desarrolladores (MERN)'
-date: '2020-03-10'
+date: '2021-03-10'
 extract: 'Empezamos el proyecto de la red social para desarrolladores instalando las dependencias del servidor y creando los archivos y carpetas que necesitaremos.'
 ---
 

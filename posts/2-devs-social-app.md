@@ -1,6 +1,6 @@
 ---
 title: 'II - Red social para desarrolladores (MERN)'
-date: '2020-03-12'
+date: '2021-03-12'
 extract: 'Programamos las funciones básicas del backend que necesitaremos la app. Conectamos la API a la base de datos y añadimos los controladores y las rutas.'
 ---
 
