@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Devs Social App",
+    "description": "Devs Social App (nombre provisional), es una red social pensada para desarrolladores. Aún se encuentra en desarrollo, por ahora su funcionalidad es muy similar a Twitter, pero planeo añadir otras funciones en el futuro.\nEl backend está desarrollado con Node, Express como framework web y MongoDB como base de datos. El frontend esta construido con Next.js y Chakra UI (como esta misma web). Si tienes interés en conocer más sobre la app no dudes en consultar el código publicado en mi perfil de Github, o, también puedes pasarte por mi blog, donde estoy publicando una serie de posts en los que comento el desarrollo de la aplicación.",
+    "links": [
+      {
+        "site": "github",
+        "link": "https://github.com/JorgeMayoral/devs-social-app-server",
+        "text": "Código servidor"
+      },
+      {
+        "site": "github",
+        "link": "https://github.com/JorgeMayoral/devs-social-app-web",
+        "text": "Código web"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hacker News Reader",
+    "description": "HN Reader es un pequeño proyecto creado con el fin de aprender a utilizar React Native. Se trata de un lector de noticias publicadas en Hacker News, para ello se hace uso de su API oficial. La app ha sido desarrollada para Android, aunque no hace uso de muchas funciones exclusivas, por lo que podría ser adaptada fácilmente para ser usada en iOS.",
+    "links": [
+      {
+        "site": "github",
+        "link": "https://github.com/JorgeMayoral/hn-react-native",
+        "text": "Código"
+      },
+      {
+        "site": "googleplay",
+        "link": "https://play.google.com/store/apps/details?id=dev.yorch.hnreader",
+        "text": "Google Play"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "LoL Matches",
+    "description": "LoL Matches es una aplicación web para ver el resultado de las últimas partidas de League of Legends de un jugador.\nLa aplicación web está  construida con el framework Next.js y hace uso de la API de Riot Games para obtener la información de los jugadores y las partidas. Puedes ver unar versión live y el código de la app en los enlacces de abajo.",
+    "links": [
+      {
+        "site": "github",
+        "link": "https://github.com/JorgeMayoral/lol-matches",
+        "text": "Código"
+      },
+      {
+        "site": "web",
+        "link": "https://lolmatches.yorch.dev/",
+        "text": "Visitar web"
+      }
+    ]
+  }
+]
