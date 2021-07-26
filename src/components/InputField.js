@@ -24,7 +24,7 @@ const InputField = ({ label, textarea = false, ...props }) => {
         {...props}
         id={field.name}
         bgColor="#fff"
-        borderColor="#fefefe"
+        borderColor="gray.300"
         mb={4}
       />
       {error ? <FormErrorMessage>{error}</FormErrorMessage> : null}

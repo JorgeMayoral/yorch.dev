@@ -11,6 +11,7 @@ import Icon from '@chakra-ui/icon';
 import InputField from './../components/InputField';
 import { useToast } from '@chakra-ui/toast';
 import Head from 'next/head';
+import { Box, Flex, Stack } from '@chakra-ui/react';
 
 const Contacto = () => {
   const toast = useToast();
@@ -44,75 +45,61 @@ const Contacto = () => {
 
   return (
     <Layout>
-      <Head>
-        <title>Contacto | DevYorch</title>
-      </Head>
-      <Heading>Contacto</Heading>
-      <Text mb={4}>
-        Puedes contactarme rellenando este formulario, con un email a{' '}
-        <Link color="#00adb5" href="mailto:mayoralalvarez@gmail.com">
-          mayoralalvarezj@gmail.com
-        </Link>
-        , o siguiendo los enlaces a mis redes sociales al final de esta página.
-      </Text>
+      <Flex minH={'100vh'} align={'center'} justify={'center'}>
+        <Head>
+          <title>Contacto | DevYorch</title>
+        </Head>
+        <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
+          <Stack align={'center'}>
+            <Heading fontSize={'4xl'}>Contacto</Heading>
+            <Text fontSize={'lg'} color={'gray.600'}>
+              Puedes contactarme rellenando este formulario, con un email a{' '}
+              <Link color="#00adb5" href="mailto:mayoralalvarez@gmail.com">
+                mayoralalvarezj@gmail.com
+              </Link>
+              , o siguiendo los enlaces a mis redes sociales al final de esta
+              página.
+            </Text>
+          </Stack>
 
-      <Formik
-        initialValues={{ contactName: '', email: '', subject: '', text: '' }}
-        onSubmit={async (values, actions) => {
-          actions.setSubmitting(true);
-          await sendMail(values);
-          actions.setSubmitting(false);
-        }}
-      >
-        {({ isSubmitting }) => (
-          <Form>
-            <InputField name="contactName" label="Nombre" />
-            <InputField name="email" label="Email" type="email" />
-            <InputField name="subject" label="Asunto" />
-            <InputField name="text" label="Mensaje" textarea />
-            <Button
-              type="submit"
-              bgColor="#00adb5"
-              color="white"
-              mb={4}
-              _hover={{ bgColor: '#00a6ae' }}
-              isLoading={isSubmitting}
-            >
-              Enviar
-            </Button>
-          </Form>
-        )}
-      </Formik>
-
-      <VStack spacing="1em">
-        <Text>Enlaces a mis perfiles en redes sociales:</Text>
-        <Text>
-          <Icon as={AiFillGithub} />{' '}
-          <Link
-            color="#00adb5"
-            href="https://github.com/JorgeMayoral"
-            isExternal
-          >
-            JorgeMayoral
-          </Link>
-        </Text>
-        <Text>
-          <Icon as={AiFillTwitterSquare} />{' '}
-          <Link color="#00adb5" href="https://twitter.com/Dev_Yorch" isExternal>
-            Dev_Yorch
-          </Link>
-        </Text>
-        <Text>
-          <Icon as={AiFillLinkedin} />{' '}
-          <Link
-            color="#00adb5"
-            href="https://linkedin.com/in/jorgemayoralalvarez"
-            isExternal
-          >
-            Jorge Mayoral Álvarez
-          </Link>
-        </Text>
-      </VStack>
+          <Box rounded={'lg'} bg={'white'} boxShadow={'lg'} p={8}>
+            <Stack spacing={4}>
+              <Formik
+                initialValues={{
+                  contactName: '',
+                  email: '',
+                  subject: '',
+                  text: '',
+                }}
+                onSubmit={async (values, actions) => {
+                  actions.setSubmitting(true);
+                  await sendMail(values);
+                  actions.setSubmitting(false);
+                }}
+              >
+                {({ isSubmitting }) => (
+                  <Form>
+                    <InputField name="contactName" label="Nombre" />
+                    <InputField name="email" label="Email" type="email" />
+                    <InputField name="subject" label="Asunto" />
+                    <InputField name="text" label="Mensaje" textarea />
+                    <Button
+                      type="submit"
+                      bgColor="#00adb5"
+                      color="white"
+                      mb={4}
+                      _hover={{ bgColor: '#00a6ae' }}
+                      isLoading={isSubmitting}
+                    >
+                      Enviar
+                    </Button>
+                  </Form>
+                )}
+              </Formik>
+            </Stack>
+          </Box>
+        </Stack>
+      </Flex>
     </Layout>
   );
 };

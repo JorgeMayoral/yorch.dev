@@ -1,12 +1,4 @@
-const nodemailer = require('nodemailer');
-
-export const config = {
-  api: {
-    bodyParser: {
-      sizeLimit: '1mb',
-    },
-  },
-};
+import axios from 'axios';
 
 export default async function handler(req, res) {
   let code = 200;
@@ -14,28 +6,29 @@ export default async function handler(req, res) {
 
   try {
     if (req.method === 'POST') {
-      const { contactName: name, email, subject, text } = req.body;
-      const message = `Nombre: ${name}\nEmail: ${email}\nAsunto: ${subject}\nMensaje:\n${text}`;
-
-      const transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        host: 'smtp-relay.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS,
+      const { contactName, email, subject, text } = req.body;
+      const contactData = {
+        contactName,
+        contactEmail: email,
+        subject,
+        body: text,
+      };
+      const url = 'http://139.162.208.98:5001/bot/message';
+      const config = {
+        headers: {
+          'Content-Type': 'application/json',
         },
-      });
+      };
 
-      const info = await transporter.sendMail({
-        from: process.env.EMAIL_USER,
-        to: 'mayoralalvarezj@gmail.com',
-        subject: subject,
-        text: message,
-      });
-      console.log(info);
-      res.status(code).json({ message: responseMessage, code });
+      const response = await axios.post(url, contactData, config);
+
+      const result = response.data;
+
+      if (result.success) {
+        res.status(code).json({ message: responseMessage, code });
+      } else {
+        res.status(500).json({ message: 'Something went wrong' });
+      }
     } else {
       res.status(400).json({ message: 'ERROR: wrong method' });
     }

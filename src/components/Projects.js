@@ -105,7 +105,7 @@ const Projects = () => {
         mx={'auto'}
       >
         {myProjects.map((cardInfo, index) => (
-          <ProjectCard {...cardInfo} index={index} />
+          <ProjectCard {...cardInfo} key={index} />
         ))}
       </SimpleGrid>
     </Flex>
