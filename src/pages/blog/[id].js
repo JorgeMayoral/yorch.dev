@@ -5,6 +5,7 @@ import Layout from '../../components/Layout';
 import { getAllPostsIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
+import { Container } from '@chakra-ui/react';
 
 const Post = ({ postData }) => {
   return (
@@ -12,9 +13,11 @@ const Post = ({ postData }) => {
       <Head>
         <title>{postData.title} | DevYorch Blog</title>
       </Head>
-      <Box className="markdown-body" textAlign="left" mb={10}>
-        <ReactMarkdown children={postData.content} />
-      </Box>
+      <Container maxW={'7xl'} p="12">
+        <Box className="markdown-body" textAlign="left" mb={10}>
+          <ReactMarkdown children={postData.content} />
+        </Box>
+      </Container>
     </Layout>
   );
 };
