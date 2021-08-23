@@ -2,17 +2,17 @@
   {
     "id": 1,
     "name": "Devs Social App",
-    "description": "Devs Social App (nombre provisional), es una red social pensada para desarrolladores. Aún se encuentra en desarrollo, por ahora su funcionalidad es muy similar a Twitter, pero planeo añadir otras funciones en el futuro.\nEl backend está desarrollado con Node, Express como framework web y MongoDB como base de datos. El frontend esta construido con Next.js y Chakra UI (como esta misma web). Si tienes interés en conocer más sobre la app no dudes en consultar el código publicado en mi perfil de Github, o, también puedes pasarte por mi blog, donde estoy publicando una serie de posts en los que comento el desarrollo de la aplicación.",
+    "description": "Devs Social App, es una sencilla red social. Su funcionalidad es muy similar a Twitter, pero planeo añadir otras funciones en el futuro.\nEl backend está desarrollado con Nodejs, Express como framework web y MongoDB como base de datos, está desplegado como un contenedor de Docker que se construye tras ejecutar los tests gracias a un sistema de CI/CD implementado gracias a Github Actions. El frontend esta construido con React Native, Expo y Typescript. Si tienes interés en conocer más sobre la app no dudes en consultar el código publicado en mi perfil de Github, o, también puedes pasarte por mi blog, donde he publicado una serie de posts en los que comento el desarrollo de la aplicación.",
     "links": [
       {
         "site": "github",
         "link": "https://github.com/JorgeMayoral/devs-social-app-server",
-        "text": "Código servidor"
+        "text": "Código backend"
       },
       {
         "site": "github",
-        "link": "https://github.com/JorgeMayoral/devs-social-app-web",
-        "text": "Código web"
+        "link": "https://github.com/JorgeMayoral/devs-social-app-native",
+        "text": "Código frontend"
       }
     ]
   },
@@ -47,6 +47,23 @@
         "site": "web",
         "link": "https://lolmatches.yorch.dev/",
         "text": "Visitar web"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Your Photos",
+    "description": "Your Photos es una sencilla aplicación para subir fotos desde una aplicación de React Native a un servidor programado con Express y Typescript. La app aún se encuentra en desarrollo.",
+    "links": [
+      {
+        "site": "github",
+        "link": "https://github.com/JorgeMayoral/your-photos-backend",
+        "text": "Código backend"
+      },
+      {
+        "site": "github",
+        "link": "https://github.com/JorgeMayoral/your-photos-native",
+        "text": "Código frontend"
       }
     ]
   }
